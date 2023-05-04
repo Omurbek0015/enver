@@ -13,6 +13,7 @@ body {
   width: 90%;
   max-width: 1324px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 nav {
@@ -173,7 +174,8 @@ nav {
 }
 
 .portfolio_list img {
-  width: 384px;
+  width: 33%px;
+  object-fit: contain;
   height: 301px;
 }
 
@@ -286,6 +288,9 @@ footer {
   .hero_content h1 {
     font-size: 61px;
   }
+  .portfolio_list_mobile {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   .hero_content {
@@ -298,6 +303,21 @@ footer {
     font-size: 36px;
     width: auto;
     line-height: 150px;
+  }
+  .portfolio_list {
+    display: none;
+  }
+  .portfolio h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .portfolio_list_mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio_list_mobile img {
+    width: 100%;
+    max-width: 330px;
   }
 }
 @media only screen and (max-width: 425px) {
